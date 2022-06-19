@@ -1,0 +1,21 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- custom js-->
+    {% block scripts %}
+    {% endblock scripts %}
+
+    <title>Countdown to launch</title>
+  </head>
+  <body>
+    <div class="container mt-3">
+        {% block content %}
+        {% endblock content %}
+    </div>
+  </body>
+</html>

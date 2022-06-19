@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+
+body {
+    background-color: rgb(212, 223, 228);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  #banner {
+    background-image: url("/static/image/banner_img.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  #banner .content h1 { 
+      /*border: 3px solid white;*/
+      position: relative;
+      top: 35px;
+      width: 1200px;
+      margin: 0 auto;
+  }
+
+  .launches { 
+    margin: 40px auto;
+    padding: 20px 30px 40px 30px;
+    background-color: #ffffff;
+    overflow: auto;
+    width: 70%;
+    border-radius: 4px;
+    align-self: center;
+  }
+
+  h1 {
+    text-transform: Uppercase;
+    margin-bottom: .5em;
+    font-family: 'Fira Code';
+    font-size: 6rem;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    color: #E4E5E6; 
+}
+
+  h2 { 
+    border-bottom: 1px solid #8f8f8f;
+    color: #000000;
+    font-family: 'Hermit';
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    color: #41292C;
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+}
+
+  li {
+    border-bottom: 1px solid #7cbcc7;
+    list-style: none;
+    margin: 50px 0px;
+    padding-bottom: 20px;
+    font-family: 'Hermit';
+    font-size: 30px;
+    font-weight: medium;
+  }
+
+  p {
+    color: #444444;
+    line-height: 32px;
+    font-family: '', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  
+  .l_date {
+    color: #444444;
+    line-height: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .l_window {
+    color: #444444;
+    line-height: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+
+  .desc {
+    color: #444444;
+    line-height: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 100;
+  }
