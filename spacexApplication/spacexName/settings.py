@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mz47)99v#a-fd8scnjzo-!8$)s7p!h97*md+kb6c0yayjr(la4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://space-launcher-tracker.herokuapp.com']
 
 
 # Application definition
