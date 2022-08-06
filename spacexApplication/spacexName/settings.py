@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'spacexApp',
+    'storages',
+    'boto',
 ]
 
 MIDDLEWARE = [
@@ -130,4 +132,14 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 import django_heroku
+import os
 django_heroku.settings(locals())
+
+# Storage on S3 settings are stored as os.environs to keep settings.py clean
+if not DEBUG:
+   AWS_STORAGE_BUCKET_NAME = os.environ['space-launch-tracker']
+   AWS_ACCESS_KEY_ID = os.environ['AKIA2RGJZNXILAAU3BP2']
+   AWS_SECRET_ACCESS_KEY = os.environ['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']
+   STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+   S3_URL = 'http://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
+   STATIC_URL = S3_URL
