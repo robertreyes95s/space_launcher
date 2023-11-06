@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'spacexApp',
     'storages',
     'boto',
+    'bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -131,9 +132,9 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-import django_heroku
-import os
-django_heroku.settings(locals())
+#import django_heroku
+#import os
+#django_heroku.settings(locals())
 
 # Storage on S3 settings are stored as os.environs to keep settings.py clean
 #if not DEBUG:
